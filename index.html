@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
     <title>Train Scheduler</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
 </head>
 
 <body>
@@ -56,7 +57,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Frequency (min)</label>
-                <input type="text" class="form-control" id="frequency">
+                <input type="number" class="form-control" id="frequency">
             </div>
 
             <button type="submit" id="submitButton" class="btn btn-primary">Search Train</button>
