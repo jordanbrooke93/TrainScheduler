@@ -55,7 +55,7 @@ database.ref().on("child_added", function (snapshot) {
     var minutesAway = frequency - remainder;
     console.log("minutes away " + minutesAway)
 
-    var nextArrival = currentTime.add(minutesAway, "HH:mm")
+    var nextArrival = currentTime.add(minutesAway, "minutes")
     console.log("next arrival: " + moment(nextArrival).format("HH:mm"));
 
     var displayRow = $("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + nextArrival.format("HH:mm") + "</td><td>" + minutesAway + "</td></tr>")
